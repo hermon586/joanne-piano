@@ -1,0 +1,83 @@
+body {
+  padding-top: 70px;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: #141414;
+}
+
+.hero-section {
+  background-image: url('assets/hero.png');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #141414 !important;
+}
+.navbar .navbar-brand, .navbar .nav-link {
+  color: #fff !important;
+}
+.navbar .nav-link:hover {
+  color: #d4af37 !important;
+}
+
+/* Primary button */
+.btn-primary {
+  background-color: #d4af37;
+  border-color: #d4af37;
+  color: #141414;
+}
+.btn-primary:hover {
+  background-color: #b89a2c;
+  border-color: #b89a2c;
+  color: #141414;
+}
+
+/* Scroll to top button */
+#scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 1000;
+  background-color: #d4af37;
+  border: none;
+  color: #141414;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
